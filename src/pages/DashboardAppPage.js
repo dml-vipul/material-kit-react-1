@@ -26,12 +26,12 @@ export default function DashboardAppPage() {
   return (
     <>
       <Helmet>
-        <title> Dashboard | Minimal UI </title>
+        <title> E-Commerce | dashboard </title>
       </Helmet>
 
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Hi, Welcome back
+          Analytics Dashboard
         </Typography>
 
         <Grid container spacing={3}>
@@ -93,7 +93,7 @@ export default function DashboardAppPage() {
 
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits
-              title="Current Visits"
+              title="Current Sales"
               chartData={[
                 { label: 'America', value: 4344 },
                 { label: 'Asia', value: 5435 },
@@ -131,7 +131,7 @@ export default function DashboardAppPage() {
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentSubject
               title="Current Subject"
-              chartLabels={['English', 'History', 'Physics', 'Geography', 'Chinese', 'Math']}
+              chartLabels={['Shoes', 'Jackets', 'Hoodies', 'Jeans', 'Chelsea', 'T-Shirts']}
               chartData={[
                 { name: 'Series 1', data: [80, 50, 30, 40, 100, 20] },
                 { name: 'Series 2', data: [20, 30, 40, 80, 20, 80] },
